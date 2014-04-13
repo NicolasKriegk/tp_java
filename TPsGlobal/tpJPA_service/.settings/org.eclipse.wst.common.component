@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="tpJPA_service">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <dependent-module archiveName="tpJPA_PersonEntity.jar" deploy-path="/" handle="module:/resource/tpJPA_PersonEntity/tpJPA_PersonEntity">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/tpJPA_service/build/classes"/>
+    </wb-module>
+</project-modules>

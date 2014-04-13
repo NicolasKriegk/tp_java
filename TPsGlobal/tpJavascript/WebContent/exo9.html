@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="js/fonctions.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var _tableau = [1,2,3,4,5]; 
+		var _tableau = exo9Permut(_tableau);
+		var chaineTableau = '[ ';
+		for(i in _tableau){
+			chaineTableau = chaineTableau + _tableau[i]; 
+			chaineTableau = chaineTableau + ' '; 
+		} 
+		chaineTableau = chaineTableau + ']'; 
+		alert('Le tableau permuté est : ' + _tableau); 
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="js/fonctions.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		function writeLine(tab){
+			document.write('<tr>');
+			for (var key in tab) {
+				if(tab[key]._modif){
+					document.write('<td style="color:red">');
+				}
+				else{
+					document.write('<td>');
+				}
+				document.write(tab[key]._val);
+				document.write('</td>');
+			}
+			document.write('</tr>');
+		}
+
+		var tableau=[234,345,675,12,34,123,3,34,2,546,12];
+		document.write('<table>');
+		exo14_triBulle(tableau, writeLine);
+		document.write('</table>');
+	</script>
+
+</body>
+</html>

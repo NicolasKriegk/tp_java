@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="js/fonctions.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var _tableauSource = prompt('Liste de nombres à trier (separes par "/"):').split('/'); 
+		var _chaineSource = '[ ';
+		for(i in _tableauSource){
+			_chaineSource = _chaineSource + _tableauSource[i]; 
+			_chaineSource = _chaineSource + ' '; 
+		} 
+		_chaineSource = _chaineSource + ']'; 
+
+		var _sensTri = prompt('Sens de tri ( 1- > ; 2- < ): '); 
+		var _tableauTrie = exo12_Tri(_tableauSource, _sensTri);
+		var _chaineTrie = '[ ';
+		for(i in _tableauTrie){
+			_chaineTrie = _chaineTrie + _tableauTrie[i]; 
+			_chaineTrie = _chaineTrie + ' '; 
+		} 
+		_chaineTrie = _chaineTrie + ']'; 
+
+		alert('Le tableau avant tri est: ' + _chaineSource
+				+ '\nLetableau trié est: ' + _chaineTrie); 
+	</script>
+
+</body>
+</html>

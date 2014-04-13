@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+table{
+  border-collapse: collapse;
+}
+
+table td {
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 10px;
+  padding-right:10px;
+}
+
+td.highlight1{
+    background : orange;
+}
+
+td.highlight2{
+    background : red;
+}
+
+td.highlight3{
+    background : green;
+}
